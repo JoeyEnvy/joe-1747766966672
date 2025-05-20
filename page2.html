@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOE - FAQ Page 2</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #fff;
+            color: #333;
+        }
+        header {
+            background-color: #444;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+        nav {
+            background-color: #333;
+            padding: 0.5rem;
+            display: flex;
+            justify-content: space-around;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+        main {
+            padding: 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        section {
+            margin-bottom: 2rem;
+            padding: 1rem;
+            background-color: #f9f9f9;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .hero {
+            text-align: center;
+        }
+        .hero img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        .about, .services, .testimonials, .contact {
+            text-align: justify;
+        }
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .services div {
+            flex: 1 1 calc(33.333% - 2rem);
+            margin: 1rem;
+            padding: 1rem;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        .contact form {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+        }
+        .contact input, .contact textarea {
+            width: 100%;
+            padding: 0.5rem;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+        }
+        .contact button {
+            background-color: #444;
+            color: #fff;
+            padding: 0.7rem 2rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .contact button:hover {
+            background-color: #333;
+        }
+        @media (max-width: 768px) {
+            .services div {
+                flex: 1 1 100%;
+            }
+        }
+        footer {
+            background-color: #444;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>JOE Restaurant - FAQ</h1>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About Us</a>
+    <a href="#services">Services</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<main>
+    <section id="hero" class="hero">
+        <img src="https://images.pexels.com/photos/70497/pexels-photo-70497.jpeg" alt="Fine Dining Table">
+        <h2>Experience Fine Dining at JOE</h2>
+        <p>Where every meal is a celebration of culinary art.</p>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Our Restaurant</h2>
+        <p>JOE Restaurant is more than just a place to eat; it is a venue where culinary dreams come to life. Our mission is to provide a warm and welcoming environment where guests can enjoy exquisite meals prepared with passion and precision. From our carefully curated menu to our attentive service, every aspect of JOE is designed to delight and satisfy our valued patrons.</p>
+        <p>We cater to a diverse clientele, from local food enthusiasts to international visitors seeking an authentic dining experience. Our restaurant is committed to maintaining the highest standards of quality and service, ensuring that each guest leaves with a smile and a desire to return.</p>
+        <ul>
+            <li>Unparalleled Service</li>
+            <li>Innovative Cuisine</li>
+            <li>Comfortable Ambiance</li>
+            <li>Memorable Experiences</li>
+        </ul>
+    </section>
+
+    <section id="services" class="services">
+        <h2>Our Offerings</h2>
+        <div>
+            <i class="fas fa-wine-glass-alt fa-2x"></i>
+            <h3>Wine Pairing</h3>
+            <p>Expertly curated wine selections to complement your meal perfectly.</p>
+        </div>
+        <div>
+            <i class="fas fa-heart fa-2x"></i>
+            <h3>Romantic Dinners</h3>
+            <p>Create unforgettable memories with our specially designed romantic setups.</p>
+        </div>
+        <div>
+            <i class="fas fa-concierge-bell fa-2x"></i>
+            <h3>Private Dining</h3>
+            <p>Exclusive dining experiences tailored for intimate gatherings and celebrations.</p>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <h2>Guest Reviews</h2>
+        <p>"The perfect place for a special occasion. The atmosphere is elegant, and the food is simply divine." - Emily R.</p>
+        <p>"A hidden gem in the city! The staff is friendly and the culinary offerings are top-notch." - Michael K.</p>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Reach Out to Us</h2>
+        <form>
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="4" placeholder="Your Message"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2023 JOE Restaurant. All rights reserved.</p>
+    <p>
+        <a href="#" class="fas fa-facebook"></a>
+        <a href="#" class="fas fa-twitter"></a>
+        <a href="#" class="fas fa-instagram"></a>
+    </p>
+</footer>
+
+</body>
+</html>
+
+
+This second page continues the FAQ theme for JOE Restaurant, maintaining a similar structure and layout while varying the content and visuals. It ensures a cohesive look across the website while providing new insights into the restaurant's offerings and customer experiences.
